@@ -3,7 +3,7 @@
 import botocore.session
 
 
-__version__ = '0.1'
+__version__ = '0.1.1'
 
 
 def normalize_config(config, prefix='botocore.', **kwargs):
