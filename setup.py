@@ -15,9 +15,14 @@ except:
     long_description = description
 
 
-requires = (
+install_requires = [
     'botocore',
-)
+]
+
+
+tests_require = [
+]
+
 
 setup(
     name='botocore_paste',
@@ -31,13 +36,18 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=requires,
-    test_suite='botocore_paste.tests',
+    install_requires=install_requires,
+    test_suite='botocore_paste',
+    tests_require=tests_require,
+    extras_require={
+        'testing': tests_require,
+    },
     classifiers=[
         'Framework :: Paste',
         'Framework :: Pyramid',
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.5',
     ],
 )

@@ -43,13 +43,13 @@ See ``botocore.session.Session``'s Documents.
 Example ini-file::
 
   botocore.profile =
-  botocore.credentials_file = ~/.aws/credentials
-  botocore.config_file = ~/.aws/config
-  botocore.metadata_service_num_attempts = 1
-  botocore.provider = aws
   botocore.region =
   botocore.data_path =
+  botocore.config_file = ~/.aws/config
+  botocore.ca_bunfle =
+  botocore.credentials_file = ~/.aws/credentials
   botocore.metadata_service_timeout = 1
+  botocore.metadata_service_num_attempts = 1
 
 
 All keys are not mandatory.
