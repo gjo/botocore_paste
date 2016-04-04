@@ -26,7 +26,7 @@ tests_require = [
 
 setup(
     name='botocore_paste',
-    version='0.1.1',
+    version='0.2',
     description=description,
     long_description=long_description,
     author='OCHIAI, Gouji',
